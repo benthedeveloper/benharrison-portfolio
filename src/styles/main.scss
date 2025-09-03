@@ -1,28 +1,27 @@
 // Abstracts
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/functions";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
 
 // Base
-@import "base/reset";
-@import "base/typography";
-@import "base/helpers";
+@use "base/reset";
+@use "base/typography";
+@use "base/helpers";
 
 // Layout
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/sections";
+@use "layout/grid";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/sections";
 
 // Components
-@import "components/buttons";
-@import "components/cards";
-@import "components/forms";
+@use "components/buttons";
+@use "components/cards";
+@use "components/forms";
 
 // Pages
-@import "pages/home";
-@import "pages/projects";
-@import "pages/about";
+@use "pages/home";
+@use "pages/projects";
 
 // Vendors
-@import "vendors/normalize";
+@use "vendors/normalize";

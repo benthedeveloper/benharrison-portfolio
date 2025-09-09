@@ -1,6 +1,8 @@
 @use "../abstracts/variables" as *;
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +10,7 @@
 
 body {
   font-family: $font-sans;
-  background: $color-light;
-  color: $color-dark;
+  background: $color-bg;
+  color: $color-text;
   line-height: 1.6;
 }

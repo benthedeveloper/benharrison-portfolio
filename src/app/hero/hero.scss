@@ -1,0 +1,25 @@
+@use "sass:color";
+@use "../../styles/abstracts/variables" as *;
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 90vh;
+  padding: 2rem;
+  background: linear-gradient(
+    to bottom right,
+    $color-background,
+    $color-teal
+  );
+  color: $color-text;
+
+  &__title {
+    color: $color-seafoam;
+  }
+
+  &__subtitle {
+    color: $color-mint;
+  }
+}

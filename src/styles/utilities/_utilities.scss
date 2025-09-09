@@ -1,0 +1,49 @@
+// ========================================
+// Utilities
+// Small, composable helper classes for layout, spacing, text, etc.
+// ========================================
+
+// Flex alignment
+.u-align-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.u-align-center {
+  display: flex;
+  justify-content: center;
+}
+
+.u-align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+// Stacking utilities
+.u-stack > * + * {
+  margin-top: 1rem;
+}
+
+.u-inline-gap > * + * {
+  margin-left: 1rem;
+}
+
+// Text alignment
+.u-text-left {
+  text-align: left;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-text-right {
+  text-align: right;
+}
+
+// Visibility helpers
+.u-hidden {
+  display: none !important;
+}
+
+.u-visible {
+  display: block !important;
+}

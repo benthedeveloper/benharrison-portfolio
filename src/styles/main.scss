@@ -1,27 +1,30 @@
 // Abstracts
-@use "abstracts/variables";
-@use "abstracts/mixins";
-@use "abstracts/functions";
+@forward "abstracts/variables";
+@forward "abstracts/mixins";
+@forward "abstracts/functions";
 
 // Base
-@use "base/reset";
-@use "base/typography";
-@use "base/helpers";
+@forward "base/reset";
+@forward "base/typography";
+@forward "base/helpers";
 
 // Layout
-@use "layout/grid";
-@use "layout/header";
-@use "layout/footer";
-@use "layout/sections";
+@forward "layout/grid";
+@forward "layout/header";
+@forward "layout/footer";
+@forward "layout/sections";
+
+// Utilities
+@forward "utilities/utilities";
 
 // Components
-@use "components/buttons";
-@use "components/cards";
-@use "components/forms";
+@forward "components/buttons";
+@forward "components/cards";
+@forward "components/forms";
 
 // Pages
-@use "pages/home";
-@use "pages/projects";
+@forward "pages/home";
+@forward "pages/projects";
 
 // Vendors
-@use "vendors/normalize";
+@forward "vendors/normalize";

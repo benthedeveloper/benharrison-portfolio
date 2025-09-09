@@ -1,10 +1,77 @@
-// TODO: Color palette for the site
-$color-primary: #6366f1;
-$color-accent: #14b8a6;
-$color-dark: #0f172a;
-$color-light: #f9fafb;
+// ==========================================================================
+// Color System
+// ==========================================================================
 
-$font-sans: 'Inter', system-ui, sans-serif;
-$font-mono: 'Fira Code', monospace;
+// Brand Palette
+$color-midnight-blue: #19203A;   // deep background
+$color-dark-slate:   #16282F;   // secondary dark
+$color-teal:         #2D5D5D;   // muted contrast
+$color-mint:         #409B83;   // accent
+$color-seafoam:      #76C8AC;   // primary accent
 
+// Semantic Roles
+$color-primary:   $color-seafoam;      // main accent
+$color-secondary: $color-mint;         // secondary accent
+$color-background: $color-midnight-blue;
+$color-surface:    $color-dark-slate;
+$color-text:       #f9f9f9;            // near-white text
+$color-heading:    #ffffff;            // headings pop
+
+// Utility / Status Colors
+$color-success: #28a745; // accessible green
+$color-warning: #ffc107; // amber
+$color-error:   #dc3545; // red
+$color-info:    #17a2b8; // cyan-ish blue
+
+// Neutral Palette (grays)
+$color-gray-100: #f9fafb;
+$color-gray-200: #e5e7eb;
+$color-gray-300: #d1d5db;
+$color-gray-400: #9ca3af;
+$color-gray-500: #6b7280;
+$color-gray-600: #4b5563;
+$color-gray-700: #374151;
+$color-gray-800: #1f2937;
+$color-gray-900: #111827;
+
+// Base
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Backgrounds
+$color-bg: $color-gray-100;
+$color-surface: $color-white;
+
+// Text
+$color-text: $color-gray-900;
+$color-text-muted: $color-gray-600;
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+// Font families
+$font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-mono: "Fira Code", monospace;
+
+// Font sizes (scale)
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-base: 1rem; // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$font-size-2xl: 1.5rem; // 24px
+$font-size-3xl: 2rem; // 32px
+$font-size-4xl: 2.5rem; // 40px
+$font-size-5xl: 3rem; // 48px
+
+// Font weights
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// TODO spacing?
+// Spacing
 $space-unit: 1rem;

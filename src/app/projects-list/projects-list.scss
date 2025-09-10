@@ -9,47 +9,15 @@
 
   &__grid {
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: $space-6;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $space-6;
   }
 
   .card--project {
     border-top: 4px solid $color-primary;
-
-    .card__image {
-      max-height: 200px;
-    }
 
     .card__title {
       color: $color-primary;
     }
   }
 }
-
-// Card styles
-// .project-card {
-//   background: $color-surface;
-//   border-radius: 0.75rem;
-//   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-//   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-//   &:hover {
-//     transform: translateY(-4px);
-//     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-//   }
-
-//   &__content {
-//     padding: $space-6;
-//   }
-
-//   &__title {
-//     margin: 0 0 $space-3;
-//     color: $color-seafoam;
-//   }
-
-//   &__description {
-//     color: $color-text;
-//     font-size: 0.95rem;
-//     line-height: 1.6;
-//   }
-// }

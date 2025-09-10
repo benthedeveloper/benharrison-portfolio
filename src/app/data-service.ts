@@ -11,7 +11,7 @@ export class DataService {
       title: 'Project 1',
       description: 'Description of Project 1',
       mainImage: {
-        url: 'https://placehold.co/600x400',
+        url: 'https://placehold.co/600x300',
         altText: 'Main image for Project 1'
       },
       exampleImages: [
@@ -25,7 +25,7 @@ export class DataService {
       title: 'Project 2',
       description: 'Description of Project 2',
       mainImage: {
-        url: 'assets/project-2/main.png',
+        url: 'https://placehold.co/600x300',
         altText: 'Main image for Project 2'
       },
       exampleImages: [
@@ -39,7 +39,7 @@ export class DataService {
       title: 'Project 3',
       description: 'Description of Project 3',
       mainImage: {
-        url: 'assets/project-3/main.png',
+        url: 'https://placehold.co/600x300',
         altText: 'Main image for Project 3'
       },
       exampleImages: [
@@ -53,7 +53,7 @@ export class DataService {
       title: 'Project 4',
       description: 'Description of Project 4',
       mainImage: {
-        url: 'assets/project-4/main.png',
+        url: 'https://placehold.co/600x300',
         altText: 'Main image for Project 4'
       },
       exampleImages: [
@@ -67,7 +67,7 @@ export class DataService {
       title: 'Project 5',
       description: 'Description of Project 5',
       mainImage: {
-        url: 'assets/project-5/main.png',
+        url: 'https://placehold.co/600x300',
         altText: 'Main image for Project 5'
       },
       exampleImages: [
@@ -81,7 +81,7 @@ export class DataService {
       title: 'Project 6',
       description: 'Description of Project 6',
       mainImage: {
-        url: 'assets/project-6/main.png',
+        url: 'https://placehold.co/600x300',
         altText: 'Main image for Project 6'
       },
       exampleImages: [

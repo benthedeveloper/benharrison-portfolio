@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 // ========================================
 // Utilities
 // Small, composable helper classes for layout, spacing, text, etc.
@@ -21,11 +23,11 @@
 
 // Stacking utilities
 .u-stack > * + * {
-  margin-top: 1rem;
+  margin-top: $space-4;
 }
 
 .u-inline-gap > * + * {
-  margin-left: 1rem;
+  margin-left: $space-4;
 }
 
 // Text alignment

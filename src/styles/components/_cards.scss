@@ -26,11 +26,11 @@
   }
 
   &__body {
-    padding: 1rem;
+    padding: $space-4;
   }
 
   &__footer {
-    padding: 0.75rem 1rem;
+    padding: $space-3 $space-4;
     font-size: 0.875rem;
   }
 }

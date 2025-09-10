@@ -42,7 +42,7 @@ h6 { font-size: $font-size-base; }
 
 // Paragraphs
 p {
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 $space-5 0;
   color: $color-text-muted;
 }
 
@@ -61,20 +61,20 @@ a {
 
 // Lists
 ul, ol {
-  margin: 0 0 1.25rem 1.25rem;
+  margin: 0 0 $space-5 $space-5;
   padding: 0;
   line-height: 1.6;
 
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: $space-2;
   }
 }
 
 // Blockquotes
 blockquote {
   border-left: 4px solid $color-primary;
-  padding-left: 1rem;
+  padding-left: $space-4;
   font-style: italic;
   color: color.adjust($color-text, $lightness: -20%);
-  margin: 1.5rem 0;
+  margin: $space-6 0;
 }

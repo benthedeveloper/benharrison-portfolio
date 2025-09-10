@@ -1,19 +1,22 @@
 import { Injectable } from '@angular/core';
+import { Project } from './models/project';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  // TODO update with real project data
-  protected readonly projects = [
+  protected readonly projects: Project[] = [
     {
       id: 'project-1',
       title: 'Project 1',
       description: 'Description of Project 1',
-      mainImageUrl: 'assets/project-1/main.png',
-      exampleImageUrls: [
-        'assets/project-1/example1.png',
-        'assets/project-1/example2.png'
+      mainImage: {
+        url: 'https://placehold.co/600x400',
+        altText: 'Main image for Project 1'
+      },
+      exampleImages: [
+        { url: 'assets/project-1/example1.png', altText: 'Example 1 for Project 1' },
+        { url: 'assets/project-1/example2.png', altText: 'Example 2 for Project 1' }
       ],
       skillTags: ['Angular', 'TypeScript', 'CSS']
     },
@@ -21,10 +24,13 @@ export class DataService {
       id: 'project-2',
       title: 'Project 2',
       description: 'Description of Project 2',
-      mainImageUrl: 'assets/project-2/main.png',
-      exampleImageUrls: [
-        'assets/project-2/example1.png',
-        'assets/project-2/example2.png'
+      mainImage: {
+        url: 'assets/project-2/main.png',
+        altText: 'Main image for Project 2'
+      },
+      exampleImages: [
+        { url: 'assets/project-2/example1.png', altText: 'Example 1 for Project 2' },
+        { url: 'assets/project-2/example2.png', altText: 'Example 2 for Project 2' }
       ],
       skillTags: ['React', 'JavaScript', 'HTML']
     },
@@ -32,10 +38,13 @@ export class DataService {
       id: 'project-3',
       title: 'Project 3',
       description: 'Description of Project 3',
-      mainImageUrl: 'assets/project-3/main.png',
-      exampleImageUrls: [
-        'assets/project-3/example1.png',
-        'assets/project-3/example2.png'
+      mainImage: {
+        url: 'assets/project-3/main.png',
+        altText: 'Main image for Project 3'
+      },
+      exampleImages: [
+        { url: 'assets/project-3/example1.png', altText: 'Example 1 for Project 3' },
+        { url: 'assets/project-3/example2.png', altText: 'Example 2 for Project 3' }
       ],
       skillTags: ['Vue', 'JavaScript', 'Sass']
     },
@@ -43,10 +52,13 @@ export class DataService {
       id: 'project-4',
       title: 'Project 4',
       description: 'Description of Project 4',
-      mainImageUrl: 'assets/project-4/main.png',
-      exampleImageUrls: [
-        'assets/project-4/example1.png',
-        'assets/project-4/example2.png'
+      mainImage: {
+        url: 'assets/project-4/main.png',
+        altText: 'Main image for Project 4'
+      },
+      exampleImages: [
+        { url: 'assets/project-4/example1.png', altText: 'Example 1 for Project 4' },
+        { url: 'assets/project-4/example2.png', altText: 'Example 2 for Project 4' }
       ],
       skillTags: ['Node.js', 'Express', 'MongoDB']
     },
@@ -54,10 +66,13 @@ export class DataService {
       id: 'project-5',
       title: 'Project 5',
       description: 'Description of Project 5',
-      mainImageUrl: 'assets/project-5/main.png',
-      exampleImageUrls: [
-        'assets/project-5/example1.png',
-        'assets/project-5/example2.png'
+      mainImage: {
+        url: 'assets/project-5/main.png',
+        altText: 'Main image for Project 5'
+      },
+      exampleImages: [
+        { url: 'assets/project-5/example1.png', altText: 'Example 1 for Project 5' },
+        { url: 'assets/project-5/example2.png', altText: 'Example 2 for Project 5' }
       ],
       skillTags: ['Python', 'Django', 'PostgreSQL']
     },
@@ -65,12 +80,25 @@ export class DataService {
       id: 'project-6',
       title: 'Project 6',
       description: 'Description of Project 6',
-      mainImageUrl: 'assets/project-6/main.png',
-      exampleImageUrls: [
-        'assets/project-6/example1.png',
-        'assets/project-6/example2.png'
+      mainImage: {
+        url: 'assets/project-6/main.png',
+        altText: 'Main image for Project 6'
+      },
+      exampleImages: [
+        { url: 'assets/project-6/example1.png', altText: 'Example 1 for Project 6' },
+        { url: 'assets/project-6/example2.png', altText: 'Example 2 for Project 6' }
       ],
       skillTags: ['Java', 'Spring Boot', 'MySQL']
     }
   ];
+
+  constructor() { }
+
+  getProjects(): Project[] {
+    return this.projects;
+  }
+
+  getProjectById(id: string): Project | undefined {
+    return this.projects.find(project => project.id === id);
+  }
 }

@@ -48,13 +48,13 @@ p {
 
 // Links
 a {
-  color: $color-primary;
+  color: $color-seafoam-dark;
   text-decoration: none;
   transition: color 0.2s ease;
 
   &:hover,
   &:focus {
-    color: color.adjust($color-primary, $lightness: -10%);
+    color: color.adjust($color-seafoam-dark, $lightness: -10%);
     text-decoration: underline;
   }
 }

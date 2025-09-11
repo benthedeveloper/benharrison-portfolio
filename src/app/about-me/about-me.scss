@@ -1,0 +1,32 @@
+@use "../../styles/abstracts/variables" as *;
+
+$about-me-image-size: 150px;
+
+.about-me {
+  display: flow-root;
+
+  &__photo {
+    display: block;
+    margin: 0 0 $space-4 0;
+    width: $about-me-image-size;
+    height: $about-me-image-size;
+    border-radius: 50%;
+    object-fit: cover;
+
+    // tablet+: float left and let text wrap around a circular shape
+    @media (min-width: 500px) {
+      float: inline-start;
+      margin: 0 $space-4 $space-4 0;
+      shape-outside: circle();
+      -webkit-shape-outside: circle();
+      // ensure the floated element participates in shaping
+      // keep display block (default) and set border-radius for circle clipping
+      border-radius: 50%;
+    }
+  }
+
+  /* optional: ensure paragraphs flow nicely around the float */
+  p {
+    margin: 0 0 $space-5 0;
+  }
+}

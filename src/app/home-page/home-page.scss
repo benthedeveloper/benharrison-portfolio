@@ -1,0 +1,16 @@
+@use "../../styles/abstracts/variables" as *;
+
+.about-contact {
+  display: grid;
+  gap: $space-6;
+  grid-template-columns: 1fr; // mobile: stacked
+
+  // 50/50 at tablet+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 390px; // Fixed width for contact column
+  }
+
+  > section {
+    padding: $space-4;
+  }
+}

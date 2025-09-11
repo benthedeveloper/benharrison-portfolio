@@ -1,0 +1,41 @@
+@use "sass:color";
+@use "../abstracts/variables" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $color-surface;
+  color: $color-text;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-md;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__header {
+    font-weight: 600;
+  }
+
+  &__body {
+    padding: $space-4;
+    flex: 1 1 auto;
+  }
+
+  &__footer {
+    padding: $space-3 $space-4;
+    font-size: 0.875rem;
+    margin-top: auto;
+  }
+}

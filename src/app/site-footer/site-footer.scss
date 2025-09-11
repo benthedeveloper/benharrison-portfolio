@@ -1,0 +1,8 @@
+@use '../../styles/abstracts/variables' as *;
+
+.site-footer {
+  background-color: $color-dark-slate;
+  color: $color-seafoam;
+  text-align: end;
+  padding: $space-lg;
+}

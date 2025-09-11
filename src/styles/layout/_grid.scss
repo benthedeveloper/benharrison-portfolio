@@ -1,0 +1,22 @@
+// Container wrapper (centers content with padding)
+@use "../abstracts/variables" as *;
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: $space-4;
+}
+
+// Grid utility
+.grid {
+  display: grid;
+  gap: $space-8;
+
+  &--2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  &--3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

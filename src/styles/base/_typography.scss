@@ -1,0 +1,80 @@
+@use "sass:color";
+@use "../abstracts/variables" as *;
+
+// Root font sizing (responsive)
+html {
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+// Base body styles
+body {
+  font-family: $font-sans;
+  font-weight: $font-weight-normal;
+  line-height: 1.6;
+  color: $color-text;
+  background-color: $color-bg;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+  font-weight: $font-weight-semibold;
+  line-height: 1.2;
+  margin: 0 0 0.75em 0;
+  color: $color-text;
+}
+
+h1 { font-size: $font-size-4xl; }
+h2 { font-size: $font-size-3xl; }
+h3 { font-size: $font-size-2xl; }
+h4 { font-size: $font-size-xl; }
+h5 { font-size: $font-size-lg; }
+h6 { font-size: $font-size-base; }
+
+// Paragraphs
+p {
+  margin: 0 0 $space-5 0;
+  color: $color-text-muted;
+}
+
+// Links
+a {
+  color: $color-seafoam-dark;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: color.adjust($color-seafoam-dark, $lightness: -10%);
+    text-decoration: underline;
+  }
+}
+
+// Lists
+ul, ol {
+  margin: 0 0 $space-5 $space-5;
+  padding: 0;
+  line-height: 1.6;
+
+  li {
+    margin-bottom: $space-2;
+  }
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $color-primary;
+  padding-left: $space-4;
+  font-style: italic;
+  color: color.adjust($color-text, $lightness: -20%);
+  margin: $space-6 0;
+}

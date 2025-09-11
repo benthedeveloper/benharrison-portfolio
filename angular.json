@@ -41,7 +41,8 @@
               "includePaths": [
                 "src/styles"
               ]
-            }
+            },
+            "outputPath": "dist/benharrison-portfolio"
           },
           "configurations": {
             "production": {
@@ -106,6 +107,9 @@
               "src/styles.scss"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

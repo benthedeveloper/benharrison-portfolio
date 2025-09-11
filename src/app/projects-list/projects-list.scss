@@ -1,5 +1,7 @@
 @use "../../styles/abstracts/variables" as *;
 
+$card-image-max-height: 200px;
+
 .projects-list {
   margin: $space-8 0;
 
@@ -14,6 +16,10 @@
   }
 
   .card--project {
+    .card__image {
+      max-height: $card-image-max-height;
+    }
+
     .card__title {
       color: $color-seafoam-dark;
     }

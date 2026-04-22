@@ -2,14 +2,15 @@ import { Injectable } from '@angular/core';
 import { Project } from './models/project';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
   protected readonly projects: Project[] = [
     {
       id: 'project-1',
       title: 'AI-powered assistant',
-      shortDescription: 'Front-end development for Microsoft\'s AI-powered assistant, featured on many pages across microsoft.com.',
+      shortDescription:
+        "Front-end development for Microsoft's AI-powered assistant, featured on many pages across microsoft.com.",
       longDescriptionHtml: `
         <p>I worked as lead front-end developer for Microsoft's AI-powered assistant, a chat drawer built on Copilot Studio that user's can open to chat with an AI chat bot to answer
         their questions about Microsoft products.</p>
@@ -22,56 +23,150 @@ export class DataService {
         `,
       mainImage: {
         url: 'assets/project-images/project-1/ai-chat-drawer-main.png',
-        altText: 'Screenshot of the AI chat drawer open on a microsoft.com page'
+        altText:
+          'Screenshot of the AI chat drawer open on a microsoft.com page',
       },
       exampleImages: [
-        { url: 'assets/project-images/project-1/example1.png', altText: 'Example 1 for Project 1' },
-        { url: 'assets/project-images/project-1/example2.png', altText: 'Example 2 for Project 1' }
+        {
+          url: 'assets/project-images/project-1/example1.png',
+          altText: 'Example 1 for Project 1',
+        },
+        {
+          url: 'assets/project-images/project-1/example2.png',
+          altText: 'Example 2 for Project 1',
+        },
       ],
-      skillTags: ['HTML', 'JavaScript', 'SCSS', 'AEM', 'Websockets'],
-      year: 2025
+      skillTags: [
+        'HTML',
+        'JavaScript',
+        'SCSS',
+        'AEM',
+        'AI',
+        'Websockets',
+        'LivePerson API',
+      ],
+      date: new Date('2025-05-01'),
     },
     {
       id: 'project-2',
       title: 'Product comparison table',
-      shortDescription: 'Development of different variants of a product comparison table used on various pages across microsoft.com.',
+      shortDescription:
+        'Development of different variants of a product comparison table used on various pages across microsoft.com.',
       longDescriptionHtml: `<p>TODO detailed description of this project</p>`,
       mainImage: {
         url: 'assets/project-images/project-2/comparison-table-main.png',
-        altText: 'Screenshot of the product comparison table on a microsoft.com page'
+        altText:
+          'Screenshot of the product comparison table on a microsoft.com page',
       },
       exampleImages: [
-        { url: 'assets/project-images/project-2/example1.png', altText: 'Example 1 for Project 2' },
-        { url: 'assets/project-images/project-2/example2.png', altText: 'Example 2 for Project 2' }
+        {
+          url: 'assets/project-images/project-2/example1.png',
+          altText: 'Example 1 for Project 2',
+        },
+        {
+          url: 'assets/project-images/project-2/example2.png',
+          altText: 'Example 2 for Project 2',
+        },
       ],
-      skillTags: ['React', 'JavaScript', 'HTML'],
-      year: 2025
+      skillTags: ['HTML', 'JavaScript', 'SCSS', 'AEM'],
+      date: new Date('2024-01-01'),
     },
     {
       id: 'project-3',
       title: 'Solution Wizard',
-      shortDescription: 'Key developer of this component used on specific microsoft.com pages. Users answer a series of questions and recieve recommendations at the end, based on their answers.',
+      shortDescription:
+        'Key developer of this component used on specific microsoft.com pages. Users answer a series of questions and recieve recommendations at the end, based on their answers.',
       longDescriptionHtml: `<p>TODO detailed description of this project</p>`,
       mainImage: {
         url: 'assets/project-images/project-3/solution-wizard-main.png',
-        altText: 'Screenshot of the Solution Wizard component on a microsoft.com page, showing a question and an answer options'
+        altText:
+          'Screenshot of the Solution Wizard component on a microsoft.com page, showing a question and an answer options',
       },
       exampleImages: [
-        { url: 'assets/project-images/project-3/example1.png', altText: 'Example 1 for Project 3' },
-        { url: 'assets/project-images/project-3/example2.png', altText: 'Example 2 for Project 3' }
+        {
+          url: 'assets/project-images/project-3/example1.png',
+          altText: 'Example 1 for Project 3',
+        },
+        {
+          url: 'assets/project-images/project-3/example2.png',
+          altText: 'Example 2 for Project 3',
+        },
       ],
-      skillTags: ['Vue', 'JavaScript', 'Sass'],
-      year: 2025
-    }
+      skillTags: ['JavaScript', 'C#', 'Sass'],
+      date: new Date('2024-01-01'),
+    },
   ];
 
-  constructor() { }
+  protected readonly trainingProjects: Project[] = [
+    {
+      id: 'training-project-1',
+      title: 'MyReads',
+      shortDescription:
+        'A book tracking app built with React, allowing users to categorize books into different shelves based on their reading status.',
+      longDescriptionHtml: `
+        <p>TODO detailed description of this project</p>
+        <ul>
+          <li>TODO key aspect of the work done on this project</li>
+          <li>TODO another key aspect of the work done on this project</li>
+          <li>TODO another key aspect of the work done on this project</li>
+        </ul>
+        `,
+      mainImage: {
+        url: 'assets/training-project-images/project-1/TODO.png',
+        altText: 'TODO alt text for the main image of Project 1',
+      },
+      exampleImages: [
+        {
+          url: 'assets/training-project-images/project-1/TODO.png',
+          altText: 'Example 1 for Project 1',
+        },
+        {
+          url: 'assets/training-project-images/project-1/TODO.png',
+          altText: 'Example 2 for Project 1',
+        },
+      ],
+      skillTags: ['TODO skill tag 1', 'TODO skill tag 2', 'TODO skill tag 3'],
+      date: new Date('2026-03-11'),
+    },
+    {
+      id: 'training-project-2',
+      title: 'Employee Polls',
+      shortDescription:
+        'A polling app built with React and Redux, allowing users to create new polls, answer polls created by other users, and view a leaderboard of users with the most created and answered polls.',
+      longDescriptionHtml: `<p>TODO detailed description of this project</p>`,
+      mainImage: {
+        url: 'assets/training-project-images/project-2/comparison-table-main.png',
+        altText: 'TODO alt text for the main image of Project 2',
+      },
+      exampleImages: [
+        {
+          url: 'assets/training-project-images/project-2/example1.png',
+          altText: 'Example 1 for Project 2',
+        },
+        {
+          url: 'assets/training-project-images/project-2/example2.png',
+          altText: 'Example 2 for Project 2',
+        },
+      ],
+      skillTags: ['TODO skill tag 1', 'TODO skill tag 2', 'TODO skill tag 3'],
+      date: new Date('2026-04-21'),
+    },
+  ];
+
+  constructor() {}
 
   getProjects(): Project[] {
     return this.projects;
   }
 
+  getTrainingProjects(): Project[] {
+    return this.trainingProjects;
+  }
+
   getProjectById(id: string): Project | undefined {
-    return this.projects.find(project => project.id === id);
+    return (
+      this.projects.find((project) => project.id === id) ||
+      this.trainingProjects.find((project) => project.id === id)
+    );
   }
 }

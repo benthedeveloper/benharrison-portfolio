@@ -2,7 +2,16 @@
   <app-hero></app-hero>
 </section>
 <section id="projects" class="container">
-  <app-projects-list></app-projects-list>
+  <app-projects-list
+    heading="Work Projects"
+    [projects]="workProjects"
+  ></app-projects-list>
+</section>
+<section id="training-projects" class="container">
+  <app-projects-list
+    heading="Training Projects"
+    [projects]="trainingProjects"
+  ></app-projects-list>
 </section>
 <section>
   <!-- TODO skills section -->

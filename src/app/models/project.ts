@@ -8,5 +8,5 @@ export interface Project {
   mainImage: Image;
   exampleImages: Image[];
   skillTags: string[];
-  year: number;
+  date: Date;
 }

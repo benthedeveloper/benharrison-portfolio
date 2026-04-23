@@ -102,7 +102,7 @@ export class DataService {
       id: 'training-project-1',
       title: 'MyReads',
       shortDescription:
-        'A book tracking app built with React, allowing users to categorize books into different shelves based on their reading status.',
+        'A book tracking app built with React, allowing users to move books to different "shelves" based on their reading status.',
       longDescriptionHtml: `
         <p>TODO detailed description of this project</p>
         <ul>
@@ -112,44 +112,70 @@ export class DataService {
         </ul>
         `,
       mainImage: {
-        url: 'assets/training-project-images/project-1/TODO.png',
-        altText: 'TODO alt text for the main image of Project 1',
+        url: 'assets/project-images/training-project-1/my-reads-main.png',
+        altText:
+          'Screenshot of My Reads root page, with "Currently Reading" shelf, and "Want to Read" shelf',
       },
       exampleImages: [
         {
-          url: 'assets/training-project-images/project-1/TODO.png',
-          altText: 'Example 1 for Project 1',
+          url: 'assets/project-images/training-project-1/my-reads-example-01.png',
+          altText: 'TODO Example 1 for Project 1',
         },
         {
-          url: 'assets/training-project-images/project-1/TODO.png',
-          altText: 'Example 2 for Project 1',
+          url: 'assets/project-images/training-project-1/my-reads-example-02.png',
+          altText: 'TODO Example 2 for Project 1',
         },
       ],
-      skillTags: ['TODO skill tag 1', 'TODO skill tag 2', 'TODO skill tag 3'],
+      skillTags: ['React', 'State management', 'Routing'],
       date: new Date('2026-03-11'),
+      liveUrl: 'https://benthedeveloper.github.io/udacity-react-myreads',
+      repoUrl: 'https://github.com/benthedeveloper/udacity-react-myreads',
     },
     {
       id: 'training-project-2',
       title: 'Employee Polls',
       shortDescription:
         'A polling app built with React and Redux, allowing users to create new polls, answer polls created by other users, and view a leaderboard of users with the most created and answered polls.',
-      longDescriptionHtml: `<p>TODO detailed description of this project</p>`,
+      longDescriptionHtml: `
+        <p>TODO detailed description of this project</p>
+        <ul>
+          <li>TODO key aspect of the work done on this project</li>
+          <li>TODO another key aspect of the work done on this project</li>
+          <li>TODO another key aspect of the work done on this project</li>
+        </ul>
+      `,
       mainImage: {
-        url: 'assets/training-project-images/project-2/comparison-table-main.png',
-        altText: 'TODO alt text for the main image of Project 2',
+        url: 'assets/project-images/training-project-2/employee-polls-main.png',
+        altText:
+          'Screenshot of dashboard view of Employee Polls app, showing the app header, and 2 tabs below with a tab for answered and unanswered questions',
       },
       exampleImages: [
         {
-          url: 'assets/training-project-images/project-2/example1.png',
+          url: 'assets/project-images/training-project-2/employee-polls-example-01.png',
+          altText: 'Employee Polls login view',
+        },
+        {
+          url: 'assets/project-images/training-project-2/employee-polls-example-02.png',
+          altText:
+            'Employee Polls poll detail view with an unanswered question',
+        },
+        {
+          url: 'assets/project-images/training-project-2/employee-polls-example-03.png',
+          altText: 'Employee Polls poll detail view with an answered question',
+        },
+        {
+          url: 'assets/project-images/training-project-2/employee-polls-example-04.png',
           altText: 'Example 1 for Project 2',
         },
         {
-          url: 'assets/training-project-images/project-2/example2.png',
-          altText: 'Example 2 for Project 2',
+          url: 'assets/project-images/training-project-2/employee-polls-example-05.png',
+          altText: 'Example 1 for Project 2',
         },
       ],
-      skillTags: ['TODO skill tag 1', 'TODO skill tag 2', 'TODO skill tag 3'],
+      skillTags: ['React', 'Redux', 'Jest'],
       date: new Date('2026-04-21'),
+      liveUrl: 'https://benthedeveloper.github.io/react-redux-employee-polls',
+      repoUrl: 'https://github.com/benthedeveloper/react-redux-employee-polls',
     },
   ];
 

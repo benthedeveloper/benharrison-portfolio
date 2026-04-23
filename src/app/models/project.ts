@@ -9,4 +9,6 @@ export interface Project {
   exampleImages: Image[];
   skillTags: string[];
   date: Date;
+  liveUrl?: string;
+  repoUrl?: string;
 }

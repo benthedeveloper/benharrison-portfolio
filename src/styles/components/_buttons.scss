@@ -62,3 +62,11 @@ input[type="submit"].btn {
     align-items: stretch;
   }
 }
+
+.btn__icon {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}

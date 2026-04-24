@@ -1,0 +1,35 @@
+@use "../../styles/abstracts/variables" as *;
+
+.site-header {
+  background: $color-surface;
+  border-bottom: 1px solid $color-border;
+  padding: 1rem 0;
+}
+
+.site-header__nav {
+  // navigation styling if needed
+}
+
+.site-header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+
+  li {
+    margin: 0;
+  }
+}
+
+.site-header__link {
+  color: $color-seafoam;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius-sm;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba($color-seafoam, 0.1);
+  }
+}

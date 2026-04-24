@@ -4,10 +4,11 @@ import { DatePipe } from '@angular/common';
 
 import { DataService } from '../data-service';
 import { Project } from '../models/project';
+import { SiteHeader } from '../site-header/site-header';
 
 @Component({
   selector: 'app-project-details',
-  imports: [DatePipe],
+  imports: [DatePipe, SiteHeader],
   templateUrl: './project-details.html',
   styleUrl: './project-details.scss',
 })

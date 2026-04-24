@@ -11,12 +11,14 @@ input[type="submit"].btn {
   border-radius: $border-radius-md;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 
   &--primary {
     background: $color-primary;
     color: $color-background;
-    border: none;
+    border: 2px solid transparent;
 
     &:hover {
       background: color.adjust($color-primary, $lightness: -10%);

@@ -1,8 +1,64 @@
 @if (project) {
-  <h2>{{ project.title }}</h2>
-  <img [src]="project.mainImage.url" [alt]="project.mainImage.altText">
-  <p>{{ project.shortDescription }}</p>
-  <!-- Add more details as needed -->
+  <div class="project-details">
+    <!-- Header -->
+    <section class="project-details__header">
+      <h1 class="project-details__title">{{ project.title }}</h1>
+      <p class="project-details__subtitle">{{ project.shortDescription }}</p>
+
+      <div class="project-details__meta">
+        <span>{{ project.date | date: "yyyy" }}</span>
+      </div>
+
+      <div class="btn-group">
+        @if (project.liveUrl) {
+          <a [href]="project.liveUrl" target="_blank" class="btn btn--primary">
+            Try it out
+          </a>
+        }
+
+        @if (project.repoUrl) {
+          <a
+            [href]="project.repoUrl"
+            target="_blank"
+            class="btn btn--secondary"
+          >
+            View Code
+          </a>
+        }
+      </div>
+    </section>
+
+    <!-- Main Image -->
+    <section class="project-details__hero">
+      <img [src]="project.mainImage.url" [alt]="project.mainImage.altText" />
+    </section>
+
+    <!-- Description -->
+    <section class="project-details__content">
+      <div [innerHTML]="project.longDescriptionHtml"></div>
+    </section>
+
+    <!-- Skills -->
+    <section class="project-details__skills">
+      <h3>Technologies Used</h3>
+      <div class="project-details__tags">
+        @for (tag of project.skillTags; track tag) {
+          <span class="tag">{{ tag }}</span>
+        }
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="project-details__gallery">
+      <h3>Screenshots</h3>
+
+      <div class="project-details__images">
+        @for (img of project.exampleImages; track img.url) {
+          <img [src]="img.url" [alt]="img.altText" />
+        }
+      </div>
+    </section>
+  </div>
 } @else {
   <p>Project not found.</p>
 }

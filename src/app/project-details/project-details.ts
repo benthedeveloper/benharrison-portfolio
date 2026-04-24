@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DatePipe } from '@angular/common';
 
 import { DataService } from '../data-service';
 import { Project } from '../models/project';
 
 @Component({
   selector: 'app-project-details',
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './project-details.html',
   styleUrl: './project-details.scss',
 })
@@ -15,7 +16,7 @@ export class ProjectDetails {
 
   constructor(
     private route: ActivatedRoute,
-    private dataService: DataService
+    private dataService: DataService,
   ) {}
 
   ngOnInit(): void {

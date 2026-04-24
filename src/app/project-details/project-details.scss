@@ -1,0 +1,66 @@
+@use "../../styles/abstracts/variables" as *;
+
+.project-detail {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    color: $color-seafoam;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    color: $color-text-muted;
+    margin-bottom: 1rem;
+  }
+
+  &__meta {
+    margin-bottom: 1.5rem;
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+  }
+
+  &__hero img {
+    width: 100%;
+    border-radius: $border-radius-md;
+    box-shadow: $shadow-md;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  &__skills {
+    margin-bottom: 2rem;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__gallery {
+    margin-bottom: 2rem;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+    img {
+      width: 100%;
+      border-radius: $border-radius-sm;
+      object-fit: cover;
+    }
+  }
+}

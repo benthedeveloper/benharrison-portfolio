@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+.tag {
+  background: $color-secondary;
+  color: #fff;
+  padding: 0.25rem 0.6rem;
+  border-radius: $border-radius-full;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-medium;
+}

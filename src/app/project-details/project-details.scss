@@ -50,6 +50,20 @@
 
   &__gallery {
     margin-bottom: 2rem;
+
+    header {
+      margin-bottom: 1rem;
+
+      h3 {
+        margin: 0;
+      }
+
+      small {
+        display: block;
+        color: $color-text-muted;
+        margin-top: 0.25rem;
+      }
+    }
   }
 
   &__images {
@@ -61,6 +75,16 @@
       width: 100%;
       border-radius: $border-radius-sm;
       object-fit: cover;
+      box-shadow: $shadow-md;
+      border: 1px solid $color-border;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-lg;
+      }
     }
   }
 }

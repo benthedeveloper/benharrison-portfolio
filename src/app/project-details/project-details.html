@@ -63,7 +63,12 @@
 
     <!-- Gallery -->
     <section class="project-details__gallery">
-      <h3>Screenshots</h3>
+      <header>
+        <h3>Screenshots</h3>
+        @if (project.legalDisclaimer) {
+          <small>{{ project.legalDisclaimer }}</small>
+        }
+      </header>
 
       <div class="project-details__images">
         @for (img of project.exampleImages; track img.url) {

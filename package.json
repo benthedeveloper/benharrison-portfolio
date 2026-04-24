@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "github-build": "ng build --configuration production --base-href 'https://benthedeveloper.github.io/benharrison-portfolio/'",
+    "github-build": "ng build --configuration production --base-href=/benharrison-portfolio/",
     "github-deploy": "npx angular-cli-ghpages --dir=dist/benharrison-portfolio/browser --no-silent"
   },
   "prettier": {

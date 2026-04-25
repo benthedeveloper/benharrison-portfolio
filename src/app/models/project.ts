@@ -11,4 +11,5 @@ export interface Project {
   date: Date;
   liveUrl?: string;
   repoUrl?: string;
+  legalDisclaimer?: string;
 }

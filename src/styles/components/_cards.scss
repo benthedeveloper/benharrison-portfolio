@@ -10,7 +10,9 @@
   border-radius: $border-radius-md;
   box-shadow: $shadow-sm;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);
@@ -22,6 +24,7 @@
     height: auto;
     display: block;
     object-fit: cover;
+    object-position: top;
   }
 
   &__header {

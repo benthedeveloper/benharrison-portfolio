@@ -1,0 +1,16 @@
+<dialog #lightboxDialog class="lightbox-dialog" closedby="any">
+  <button
+    class="lightbox-dialog__close"
+    aria-label="Close lightbox dialog"
+    (click)="closeLightbox()"
+  >
+    <fa-icon [icon]="faTimes"></fa-icon>
+  </button>
+  <div class="lightbox-dialog__content">
+    <img
+      [src]="currentImageUrl"
+      [alt]="currentImageAlt"
+      class="lightbox-dialog__image"
+    />
+  </div>
+</dialog>

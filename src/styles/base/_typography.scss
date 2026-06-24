@@ -25,7 +25,12 @@ body {
 }
 
 // Headings
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-sans;
   font-weight: $font-weight-semibold;
   line-height: 1.2;
@@ -33,12 +38,24 @@ h1, h2, h3, h4, h5, h6 {
   color: $color-text;
 }
 
-h1 { font-size: $font-size-4xl; }
-h2 { font-size: $font-size-3xl; }
-h3 { font-size: $font-size-2xl; }
-h4 { font-size: $font-size-xl; }
-h5 { font-size: $font-size-lg; }
-h6 { font-size: $font-size-base; }
+h1 {
+  font-size: $font-size-4xl;
+}
+h2 {
+  font-size: $font-size-3xl;
+}
+h3 {
+  font-size: $font-size-2xl;
+}
+h4 {
+  font-size: $font-size-xl;
+}
+h5 {
+  font-size: $font-size-lg;
+}
+h6 {
+  font-size: $font-size-base;
+}
 
 // Paragraphs
 p {
@@ -60,7 +77,8 @@ a {
 }
 
 // Lists
-ul, ol {
+ul,
+ol {
   margin: 0 0 $space-5 $space-5;
   padding: 0;
   line-height: 1.6;

@@ -75,9 +75,7 @@
           <button
             class="project-details__image-button"
             (click)="openImageLightbox(img.url, img.altText)"
-            [attr.aria-label]="
-              `View larger version of image in modal dialog: ${img.altText}`
-            "
+            [attr.aria-label]="`View larger version of image in modal dialog: ${img.altText}`"
           >
             <img [src]="img.url" [alt]="img.altText" />
           </button>

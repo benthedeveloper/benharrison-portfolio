@@ -244,13 +244,60 @@ export class DataService {
         },
         {
           url: 'assets/project-images/training-project-2/employee-polls-example-05.png',
-          altText: 'Example 1 for Project 2',
+          altText: 'Example 2 for Project 2',
         },
       ],
       skillTags: ['React', 'Redux', 'Jest'],
       date: new Date('2026-04-21'),
       liveUrl: 'https://benthedeveloper.github.io/react-redux-employee-polls',
       repoUrl: 'https://github.com/benthedeveloper/react-redux-employee-polls',
+    },
+    {
+      id: 'image-processing-api',
+      title: 'Image Processing API',
+      shortDescription:
+        'An Express and TypeScript image-processing API that resizes images on demand, caches generated thumbnails, and serves them through a simple query-based endpoint.',
+      longDescriptionHtml: `
+        <p>Built with Express, TypeScript, and Sharp, this API processes image assets from a local folder and returns resized or original images via a REST endpoint.</p>
+          <ul>
+            <li>Supports query parameters for filename, width, and height at <code>/api/images</code></li>
+            <li>Validates request inputs and returns clear 400/404/500 error responses</li>
+            <li>Uses Sharp to resize images and writes cached thumbnails to <code>assets/thumbs</code></li>
+            <li>Serves cached images directly when the same size request is repeated</li>
+            <li>Includes CORS handling for configurable allowed origins</li>
+            <li>Implemented in TypeScript with unit and API tests using Jasmine and SuperTest</li>
+          </ul>
+      `,
+      mainImage: {
+        url: 'assets/project-images/training-project-3/image-processing-api-main.png',
+        altText: 'TODO alt text for Project 3 main image',
+      },
+      exampleImages: [
+        {
+          url: 'assets/project-images/training-project-3/image-processing-api-example-01.png',
+          altText: 'Image Processing API example 1',
+        },
+        {
+          url: 'assets/project-images/training-project-3/image-processing-api-example-02.png',
+          altText: 'Image Processing API example 2',
+        },
+        {
+          url: 'assets/project-images/training-project-3/image-processing-api-example-03.png',
+          altText: 'Image Processing API example 3',
+        },
+        {
+          url: 'assets/project-images/training-project-3/image-processing-api-example-04.png',
+          altText: 'Image Processing API example 4',
+        },
+        {
+          url: 'assets/project-images/training-project-3/image-processing-api-example-05.png',
+          altText: 'Image Processing API example 5',
+        },
+      ],
+      skillTags: ['Express', 'TypeScript', 'Sharp', 'Jasmine', 'SuperTest'],
+      date: new Date('2026-06-22'),
+      liveUrl: 'TODO_NEED_LIVE_URL',
+      repoUrl: 'https://github.com/benthedeveloper/image-processing-api',
     },
   ];
 

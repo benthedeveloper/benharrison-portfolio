@@ -7,7 +7,7 @@ import { Project } from '../models/project';
   selector: 'app-projects-list',
   imports: [RouterModule],
   templateUrl: './projects-list.html',
-  styleUrl: './projects-list.scss'
+  styleUrl: './projects-list.scss',
 })
 export class ProjectsList {
   @Input() heading: string = 'Projects';

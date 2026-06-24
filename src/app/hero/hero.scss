@@ -8,11 +8,7 @@
   text-align: center;
   min-height: 90vh;
   padding: $space-8;
-  background: linear-gradient(
-    to bottom right,
-    $color-background,
-    $color-teal
-  );
+  background: linear-gradient(to bottom right, $color-background, $color-teal);
   color: $color-text;
 
   &__title {

@@ -10,7 +10,8 @@
     "format": "prettier --write \"src/**/*.{ts,html,scss}\" \"public/**/*.html\"",
     "format:check": "prettier --check \"src/**/*.{ts,html,scss}\" \"public/**/*.html\"",
     "github-build": "ng build --configuration production --base-href=/benharrison-portfolio/",
-    "github-deploy": "npx angular-cli-ghpages --dir=dist/benharrison-portfolio/browser --no-silent"
+    "github-deploy": "npx angular-cli-ghpages --dir=dist/benharrison-portfolio/browser --no-silent",
+    "lint": "ng lint"
   },
   "prettier": {
     "overrides": [
@@ -40,8 +41,11 @@
     "@angular/build": "^22.0.4",
     "@angular/cli": "^22.0.4",
     "@angular/compiler-cli": "^22.0.2",
+    "@eslint/js": "^10.0.1",
     "@types/jasmine": "~5.1.0",
     "angular-cli-ghpages": "^2.0.3",
+    "angular-eslint": "22.0.0",
+    "eslint": "^10.3.0",
     "istanbul-lib-instrument": "^6.0.3",
     "jasmine-core": "~5.8.0",
     "karma": "~6.4.0",
@@ -51,6 +55,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "^3.8.4",
     "typescript": "~6.0.3",
+    "typescript-eslint": "8.60.1",
     "vitest": "^4.0.8"
   }
 }

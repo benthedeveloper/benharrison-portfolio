@@ -1,4 +1,9 @@
-import { Component, viewChild, ElementRef } from '@angular/core';
+import {
+  Component,
+  ViewChild,
+  ElementRef,
+  ChangeDetectorRef,
+} from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,19 +14,26 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './lightbox-dialog.scss',
 })
 export class LightboxDialog {
-  dialogRef = viewChild<ElementRef<HTMLDialogElement>>('lightboxDialog');
+  @ViewChild('lightboxDialog') dialogRef?: ElementRef<HTMLDialogElement>;
 
   currentImageUrl: string = '';
   currentImageAlt: string = '';
   faTimes = faTimes;
 
+  constructor(private cd: ChangeDetectorRef) {}
+
   openLightbox(imageUrl: string, altText: string): void {
     this.currentImageUrl = imageUrl;
     this.currentImageAlt = altText;
-    this.dialogRef()?.nativeElement.showModal();
+
+    // Ensure bindings are applied before opening
+    this.cd.detectChanges();
+    requestAnimationFrame(() => {
+      this.dialogRef?.nativeElement.showModal();
+    });
   }
 
   closeLightbox(): void {
-    this.dialogRef()?.nativeElement.close();
+    this.dialogRef?.nativeElement.close();
   }
 }

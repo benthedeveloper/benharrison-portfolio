@@ -301,8 +301,6 @@ export class DataService {
     },
   ];
 
-  constructor() {}
-
   getProjects(): Project[] {
     return this.projects;
   }

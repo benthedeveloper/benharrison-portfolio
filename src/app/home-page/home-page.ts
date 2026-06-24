@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { ProjectsList } from '../projects-list/projects-list';
 import { Hero } from '../hero/hero';
 import { ExperimentsList } from '../experiments-list/experiments-list';
@@ -14,10 +14,10 @@ import { Project } from '../models/project';
   styleUrl: './home-page.scss',
 })
 export class HomePage implements OnInit {
+  private dataService = inject(DataService);
+
   workProjects: Project[] = [];
   trainingProjects: Project[] = [];
-
-  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.workProjects = this.dataService.getProjects();

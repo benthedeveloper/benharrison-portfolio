@@ -11,7 +11,8 @@
     "format:check": "prettier --check \"src/**/*.{ts,html,scss}\" \"public/**/*.html\"",
     "github-build": "ng build --configuration production --base-href=/benharrison-portfolio/",
     "github-deploy": "npx angular-cli-ghpages --dir=dist/benharrison-portfolio/browser --no-silent",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix"
   },
   "prettier": {
     "overrides": [

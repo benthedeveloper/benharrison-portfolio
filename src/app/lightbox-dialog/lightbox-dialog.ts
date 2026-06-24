@@ -3,6 +3,7 @@ import {
   ViewChild,
   ElementRef,
   ChangeDetectorRef,
+  inject,
 } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -14,13 +15,13 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './lightbox-dialog.scss',
 })
 export class LightboxDialog {
+  private cd = inject(ChangeDetectorRef);
+
   @ViewChild('lightboxDialog') dialogRef?: ElementRef<HTMLDialogElement>;
 
-  currentImageUrl: string = '';
-  currentImageAlt: string = '';
+  currentImageUrl = '';
+  currentImageAlt = '';
   faTimes = faTimes;
-
-  constructor(private cd: ChangeDetectorRef) {}
 
   openLightbox(imageUrl: string, altText: string): void {
     this.currentImageUrl = imageUrl;

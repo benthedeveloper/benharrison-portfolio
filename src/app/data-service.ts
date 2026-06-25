@@ -261,6 +261,11 @@ export class DataService {
         <p>Built with Express, TypeScript, and Sharp, this API processes image assets from a local folder and returns resized or original images via a REST endpoint.</p>
           <ul>
             <li>Supports query parameters for filename, width, and height at <code>/api/images</code></li>
+            <ul>
+              <li>Example: <a href="https://image-processing-api-7mvk.onrender.com/api/images?filename=fjord&width=500&height=300" target="_blank" rel="noopener noreferrer">https://image-processing-api-7mvk.onrender.com/api/images?filename=fjord&width=500&height=300</a></li>
+              <li>Filenames available in demo: encenadaport, icelandwaterfall, palmtunnel, santamonica</li>
+              <li>Note the server on <a href="https://render.com" target="_blank" rel="noopener noreferrer">Render</a> takes a moment to initialize if it has not been used recently</li>
+            </ul>
             <li>Validates request inputs and returns clear 400/404/500 error responses</li>
             <li>Uses Sharp to resize images and writes cached thumbnails to <code>assets/thumbs</code></li>
             <li>Serves cached images directly when the same size request is repeated</li>
@@ -269,39 +274,33 @@ export class DataService {
           </ul>
       `,
       mainImage: {
-        url: 'assets/project-images/training-project-3/image-processing-api-main.png',
-        altText: 'TODO alt text for Project 3 main image',
+        url: 'assets/project-images/training-project-3/image-processing-api-main.jpg',
+        altText: 'A fjord',
       },
       exampleImages: [
         {
           url: 'assets/project-images/training-project-3/image-processing-api-example-01.png',
-          altText: 'Image Processing API example 1',
+          altText: 'A boat in Encenada Port',
         },
         {
           url: 'assets/project-images/training-project-3/image-processing-api-example-02.png',
-          altText: 'Image Processing API example 2',
-        },
-        {
-          url: 'assets/project-images/training-project-3/image-processing-api-example-03.png',
-          altText: 'Image Processing API example 3',
-        },
-        {
-          url: 'assets/project-images/training-project-3/image-processing-api-example-04.png',
-          altText: 'Image Processing API example 4',
-        },
-        {
-          url: 'assets/project-images/training-project-3/image-processing-api-example-05.png',
-          altText: 'Image Processing API example 5',
+          altText: 'A street in Santa Monica',
         },
       ],
-      skillTags: ['Express', 'TypeScript', 'Sharp', 'Jasmine', 'SuperTest'],
+      skillTags: [
+        'NodeJS',
+        'Express',
+        'TypeScript',
+        'Jasmine',
+        'SuperTest',
+        'Sharp',
+      ],
       date: new Date('2026-06-22'),
-      liveUrl: 'TODO_NEED_LIVE_URL',
+      liveUrl:
+        'https://image-processing-api-7mvk.onrender.com/api/images?filename=fjord&width=500&height=300',
       repoUrl: 'https://github.com/benthedeveloper/image-processing-api',
     },
   ];
-
-  constructor() {}
 
   getProjects(): Project[] {
     return this.projects;

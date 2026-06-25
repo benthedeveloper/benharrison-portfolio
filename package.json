@@ -10,7 +10,9 @@
     "format": "prettier --write \"src/**/*.{ts,html,scss}\" \"public/**/*.html\"",
     "format:check": "prettier --check \"src/**/*.{ts,html,scss}\" \"public/**/*.html\"",
     "github-build": "ng build --configuration production --base-href=/benharrison-portfolio/",
-    "github-deploy": "npx angular-cli-ghpages --dir=dist/benharrison-portfolio/browser --no-silent"
+    "github-deploy": "npx angular-cli-ghpages --dir=dist/benharrison-portfolio/browser --no-silent",
+    "lint": "ng lint",
+    "lint:fix": "ng lint --fix"
   },
   "prettier": {
     "overrides": [
@@ -24,24 +26,28 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^21.2.10",
-    "@angular/compiler": "^21.2.10",
-    "@angular/core": "^21.2.10",
-    "@angular/forms": "^21.2.10",
-    "@angular/platform-browser": "^21.2.10",
-    "@angular/router": "^21.2.10",
-    "@fortawesome/angular-fontawesome": "^4.0.0",
+    "@angular/common": "^22.0.2",
+    "@angular/compiler": "^22.0.2",
+    "@angular/core": "^22.0.2",
+    "@angular/forms": "^22.0.2",
+    "@angular/platform-browser": "^22.0.2",
+    "@angular/router": "^22.0.2",
+    "@fortawesome/angular-fontawesome": "^5.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular/build": "^21.2.8",
-    "@angular/cli": "^21.2.8",
-    "@angular/compiler-cli": "^21.2.10",
+    "@angular/build": "^22.0.4",
+    "@angular/cli": "^22.0.4",
+    "@angular/compiler-cli": "^22.0.2",
+    "@eslint/js": "^10.0.1",
     "@types/jasmine": "~5.1.0",
     "angular-cli-ghpages": "^2.0.3",
+    "angular-eslint": "22.0.0",
+    "eslint": "^10.3.0",
+    "istanbul-lib-instrument": "^6.0.3",
     "jasmine-core": "~5.8.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -49,6 +55,8 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "prettier": "^3.8.4",
-    "typescript": "~5.9.3"
+    "typescript": "~6.0.3",
+    "typescript-eslint": "8.60.1",
+    "vitest": "^4.0.8"
   }
 }

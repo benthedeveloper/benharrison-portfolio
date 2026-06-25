@@ -10,6 +10,6 @@ import { Project } from '../models/project';
   styleUrl: './projects-list.scss',
 })
 export class ProjectsList {
-  @Input() heading: string = 'Projects';
+  @Input() heading = 'Projects';
   @Input() projects: Project[] = [];
 }

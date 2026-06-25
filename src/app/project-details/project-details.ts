@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -15,16 +15,14 @@ import { LightboxDialog } from '../lightbox-dialog/lightbox-dialog';
   templateUrl: './project-details.html',
   styleUrl: './project-details.scss',
 })
-export class ProjectDetails {
+export class ProjectDetails implements OnInit {
+  private route = inject(ActivatedRoute);
+  private dataService = inject(DataService);
+
   @ViewChild(LightboxDialog) lightboxDialog!: LightboxDialog;
 
   project: Project | undefined;
   faDesktop = faDesktop;
-
-  constructor(
-    private route: ActivatedRoute,
-    private dataService: DataService,
-  ) {}
 
   ngOnInit(): void {
     const projectId = this.route.snapshot.paramMap.get('id');
